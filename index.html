@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+  <script>
+    async function main() {
+      await liff.init({ liffId: "1656174103-DajnOb6Q" })
+      await liff.shareTargetPicker([
+        {
+          type: "flex",
+          altText: "Flex Message from Share Target Picker",
+          contents:
+        }
+      ])
+      liff.closeWindow()
+    }
+    main()
+  </script>
+</body>
+</html>
